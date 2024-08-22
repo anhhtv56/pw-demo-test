@@ -1,14 +1,14 @@
 import { expect, test } from "@playwright/test";
-import { NavigationPage } from "../page-object/main-page/navigationPage";
-import { FormPage } from "../page-object/formPage";
-import { NavigationDocPage } from "../page-object/procivis-one-doc/navigationDocPage";
+import { NavigationPage } from "../../page-object/main-page/navigationPage";
+import { FormPage } from "../../page-object/formPage";
+import { NavigationDocPage } from "../../page-object/procivis-one-doc/navigationDocPage";
 
 test.describe('Test suite 1', ()=>{
     test.beforeEach(async({page}) => {
         await page.goto('/')
     })
 
-    test('navigation test', async({page, context}) => {
+    test('navigation test @smoke', async({page, context}) => {
         const navigateTo = new NavigationPage(page, context) 
         await navigateTo.moveToProcivisOnePage()
         await expect(page).toHaveScreenshot('procivisOnePage.png', { maxDiffPixels: 100})

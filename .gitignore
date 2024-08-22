@@ -3,4 +3,5 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
-tests/firstTest.spec.ts-snapshots
+tests/ui-test/firstTest.spec.ts-snapshots/
+tests/ui-test/interview.spec.ts
