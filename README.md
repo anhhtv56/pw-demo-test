@@ -1,11 +1,53 @@
-npm init playwright@latest // install playwright \
-npx playwright test // execute test case \
-npx playwright show-report // show report \
-npx playwright test --project=chromium // execute test case \
-npx playwright test --project=chromium --headed // execute test case headless \
-npx playwright test example.spec.ts --project=chromium // execute example.spec.ts file \
-npx playwright test -g "has title" --project=chromium // execute test case name "has title" \
-npx playwright test --ui // execute test on UI mode \
-npx playwright test --project=chromium --trace on // execute test on trace mode \
-npx playwright test --project=chromium --debug // execute test on debug mode    \ 
-npx playwright test --update-snapshots // update snapshot for visual testing    \
+
+# Playwright Commands
+
+Below is a list of commonly used Playwright commands for testing and debugging:
+
+### Installation
+- **Install Playwright:**
+  ```bash
+  npm init playwright@latest
+
+### Running Tests
+- **Run all test cases:**
+  ```bash
+  npx playwright test
+
+- **Show the test report:**
+  ```bash
+  npx playwright show-report
+
+- **Run tests for a specific project (e.g., Chromium):**
+  ```bash
+  npx playwright test --project=chromium
+
+- **Run tests in headed mode (with browser UI):**
+  ```bash
+  npx playwright test --project=chromium --headed
+
+- **Run a specific test file:**
+  ```bash
+  npx playwright test example.spec.ts --project=chromium
+
+- **Run a specific test case by name:**
+  ```bash
+  npx playwright test -g "has title" --project=chromium
+
+### Debugging and Tracing
+- **Run tests in UI mode:**
+  ```bash
+  npx playwright test --ui
+
+- **Run tests with tracing enabled:**
+  ```bash
+  npx playwright test --project=chromium --trace on
+
+- **Run tests in debug mode:**
+  ```bash
+  npx playwright test --project=chromium --debug
+
+### Reports and Snapshots
+- **Update snapshots for visual testing:**
+  ```bash
+  npx playwright test --update-snapshots
+
